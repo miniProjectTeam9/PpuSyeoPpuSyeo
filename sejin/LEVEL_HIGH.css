@@ -1,7 +1,7 @@
 section.wrapper {
     width: 500px;
     margin: 0 auto;
-    /* border: 1px solid #000;    */
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,15 +47,8 @@ section.wrapper h1.title {
     justify-content: center;
     align-items: center;
     height: 150px;
-    /* animation: title 2s infinite both; */
 }
-/* @keyframes title {
-    0% {font-size: 50px;}
-    25% {font-size: 55px;}
-    50% {font-size: 50px;}
-    75% {font-size: 55px;}
-    100% {font-size: 50px;}
-} */
+
 section.wrapper .setLevel{
     width: 500px;
     display: flex;
@@ -67,7 +60,6 @@ section.wrapper .setLevel{
 section.wrapper .setLevel .level {
     width: 150px;
     padding: 10px 30px;
-    /* border: 1px solid #000; */
     border-radius: 40px;
     display: flex;
     justify-content: center;
@@ -97,12 +89,9 @@ section.wrapper .puzzle {
     width: 500px;
     height: 500px;
     border-radius: 20px;
-    /* border: 5px solid rgb(110, 110, 110); */
 }
 section.wrapper .highLevelGame{
-    /* display: none; */
     overflow: hidden;
-    /* background-color: rgb(238, 255, 154); */
 }
 section.wrapper .highLevelGame .mixedImage {
     width: 20%;
@@ -110,7 +99,6 @@ section.wrapper .highLevelGame .mixedImage {
     float: left;
     opacity: 0.8;
     border: 1px dashed #ffffff;
-    /* animation: highMode1 1s infinite both; */
 }
 section.wrapper .highLevelGame .mixedImage:nth-child(2n + 1){
     animation: highMode1 1s infinite both;

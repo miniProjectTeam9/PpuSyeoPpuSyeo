@@ -4,16 +4,10 @@ const originImage = ['image/l0.png', 'image/l1.png', 'image/l2.png', 'image/l3.p
 ];
 
 function getImage() {
-    //이미지 준비============================================================================
-    //원본 이미지 소스 배열 4 x 4
-    //원본 복사
     const copyOfOrigin = [...originImage];
-    //빈배열
     const mixedImage = [];
     const $picture = document.querySelector('.lowLevelGame');
-    //이미지 섞어서 빈배열에 저장
 
-    //mixImage에 순차적으로 이미지 넣기
     for (let i = 0; i < copyOfOrigin.length; i++) {
         mixedImage.push(copyOfOrigin[i]);
     }
@@ -34,7 +28,6 @@ function getImage() {
         orderedIndex++;
     }
 
-    //blank가 돌아다니면서 그림 섞기 
     const UP = 0;
     const LEFT = 1;
     const RIGHT = 2;
@@ -109,17 +102,12 @@ function getImage() {
 
 }
 
-//클릭가능 버튼 지정하기==========================================================
 function setMovePoint() {
     const $puzzle = document.querySelector('.lowLevelGame').children;
     const arrayOfPics = [...$puzzle];
-    //배열 사본 생성
     const $blank = document.querySelector('#blank');
-    //blank 인덱스 찾기
     let movePoint = arrayOfPics.indexOf($blank);
-    // console.log(movePoint);
-    //4칸, 1칸거리 그림들에게 movable 클래스 주기
-    //blank가 가장자리에 있을때 예외사항 두기
+
     for (let i = 0; i < arrayOfPics.length; i++) {
         if ((i - movePoint) === -1 &&
             (i + 1) % 3 == 0) {
@@ -139,7 +127,6 @@ function setMovePoint() {
 
 }
 
-
 function endOfGame() {
     const $puzzle = document.querySelector('.lowLevelGame').children;
     const arrayOfPics = [...$puzzle];
@@ -156,13 +143,11 @@ function endOfGame() {
     return;
 }
 
-//movable 움직이기=========================================================================
 function movePuzzle(e) {
     const $picture = document.querySelector('.lowLevelGame');
     const $blank = document.querySelector('#blank');
     setMovePoint();
     if (e.target.matches('.puzzle .movable')) {
-        //    e.target.style.background = 'red';
         $blank.style.background = e.target.style.background;
         e.target.style.background = null;
 
@@ -170,7 +155,7 @@ function movePuzzle(e) {
         e.target.id = $blank.id;
         $blank.id = temp;
     }
-    // [...$picture.children].forEach($pic => $pic.classList.remove('movable'));
+
     const $puzzle = [...$picture.children];
     for (let i = 0; i < $puzzle.length; i++) {
         if ($puzzle[i].classList.contains('movable')) {

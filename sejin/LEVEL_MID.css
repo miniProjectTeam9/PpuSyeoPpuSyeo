@@ -1,7 +1,6 @@
 section.wrapper {
     width: 500px;
     margin: 0 auto;
-    /* border: 1px solid #000;    */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,7 +41,7 @@ section.wrapper h1.title {
     justify-content: center;
     align-items: center;
     height: 150px;
-    /* animation: title 2s infinite both; */
+
 }
 section.wrapper .toHome {
     position: absolute;
@@ -52,13 +51,6 @@ section.wrapper .toHome {
     padding: 3px 10px;
     border-radius: 20px;
 }
-/* @keyframes title {
-    0% {font-size: 50px;}
-    25% {font-size: 55px;}
-    50% {font-size: 50px;}
-    75% {font-size: 55px;}
-    100% {font-size: 50px;}
-} */
 section.wrapper .setLevel{
     width: 500px;
     display: flex;
@@ -70,18 +62,6 @@ section.wrapper .setLevel{
 section.wrapper .setLevel .level {
     width: 150px;
     padding: 10px 30px;
-    /* border: 1px solid #000; */
-    border-radius: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    cursor: pointer;
-}
-section.wrapper .setLevel .level {
-    width: 150px;
-    padding: 10px 30px;
-    /* border: 1px solid #000; */
     border-radius: 40px;
     display: flex;
     justify-content: center;
@@ -111,7 +91,6 @@ section.wrapper .puzzle {
     width: 500px;
     height: 500px;
     border-radius: 20px;
-    /* border: 5px solid rgb(110, 110, 110); */
 }
 
 section.wrapper .midLevelGame{
@@ -130,11 +109,7 @@ section.wrapper .midLevelGame .mixedImage {
 section.wrapper .midLevelGame .mixedImage:hover {
     opacity: 1;
 }
-section.wrapper .midLevelGame .mixedImage:nth-child(4n + 4)::after {
-    content: '';
-    display: block;
-    clear: both;
-}
+
 section.wrapper .midLevelGame #blank {
     background: #ffffff;
 }
