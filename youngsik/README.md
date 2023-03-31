@@ -56,7 +56,8 @@
 #### 미니게임4
 
 -   순간반응속도 측정<br>
-<img src="img/반응속도.png"  width="400" height="270">
+<img src="img/반응속도.PNG"  width="400" height="270">
+
 # **Ⅲ. 개선방향**
 
 - 통일성 있는 UI 개선
