@@ -23,6 +23,7 @@ function getImage() {
             break;
         }
         $setImage.style.background = `url(${mixedImage[orderedIndex]})`;
+        $setImage.style.backgroundSize = 'cover';
         $picture.appendChild($setImage);
 
         orderedIndex++;
@@ -131,13 +132,12 @@ function endOfGame() {
     const $puzzle = document.querySelector('.lowLevelGame').children;
     const arrayOfPics = [...$puzzle];
     for (let i = 0; i < arrayOfPics.length - 1; i++) {
-        if (arrayOfPics[i].style.background === `url("${originImage[i]}")`) {
+        if (arrayOfPics[i].style.background === `url("${originImage[i]}") 0% 0% / cover`) {
             arrayOfPics[i].style.opacity = 1;
         } else {
             return;
         }
     }
-
     const $ending = document.querySelector('.ending');
     $ending.style.display = 'block';
     return;
