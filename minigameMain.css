@@ -149,7 +149,7 @@ body header .gametitle .titleLine .break {
     right: 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
     body {
         min-width: 260px;
         overflow: auto;

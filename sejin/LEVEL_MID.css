@@ -113,3 +113,58 @@ section.wrapper .midLevelGame .mixedImage:hover {
 section.wrapper .midLevelGame #blank {
     background: #ffffff;
 }
+@media screen and (max-width: 500px) {
+    section.wrapper {
+        width: 100%;
+        background: none;
+    }
+    section.wrapper h1.title {
+        font-size: 20px;
+    }
+    section.wrapper .setLevel{
+        width: 250px;
+    }
+    section.wrapper .setLevel .level {
+        width: 60px;
+        padding: 10px;
+        font-size: 13px;
+    }
+    section.wrapper .puzzle {
+        width: 250px;
+        height: 250px;
+    }
+    section.wrapper .puzzle .subTitle {
+        font-size: 15px;
+        height: 100px;
+    }
+    section.wrapper .puzzle .subTitle span {
+        font-size: 25px;
+    }
+    section.wrapper .puzzle .animationBox {
+        height: 150px;
+    }
+    section.wrapper .puzzle .animationBox .animationBlock {
+        width: 50px;
+    }
+    @keyframes level1 {
+        0% { height: 50%;}
+        50% {height: 100%;}
+        100% {height: 50%;}
+    }
+    .ending {
+        width: 250px;
+        height: 250px;
+        background: url("image/end.png") no-repeat center center / cover;
+    }
+    @keyframes ending {
+        from {
+            top: 250px;
+            width: 0;
+            height: 0;
+        }to{
+            top: 200px;
+            width: 250px;
+            height: 250px;
+        }
+    }
+}
