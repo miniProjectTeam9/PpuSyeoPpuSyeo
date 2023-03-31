@@ -40,22 +40,22 @@
 #### 미니게임1
 
 -   집사야 밥줘!!<br>
-<img src="img/집사야밥줘.png"  width="400" height="270">
+<img src="youngsik/img/집사야밥줘.png"  width="400" height="270">
 
 #### 미니게임2
 
 -   그림 퍼즐<br>
-<img src="img/그림 퍼즐.png"  width="400" height="270">
+<img src="youngsik/img/그림 퍼즐.png"  width="400" height="270">
 
 #### 미니게임3
 
 -   수도 퀴즈<br>
-<img src="img/수도퀴즈.png"  width="400" height="270">
+<img src="youngsik/img/수도퀴즈.png"  width="400" height="270">
 
 #### 미니게임4
 
 -   순간반응속도 측정<br>
-<img src="img/반응속도.PNG"  width="400" height="270">
+<img src="youngsik/img/반응속도.PNG"  width="400" height="270">
 
 # **Ⅲ. 개선방향**
 
@@ -65,7 +65,7 @@
 
 ### 팀원 소개
 
-| <img src="img/여자3.png" alt="수민님" style="zoom: 25%;" width=400 /> | <img src="img/여자4.png" alt="세진님" style="zoom: 25%;" width=400 /> | <img src="img/남자1.png" alt="재필님" style="zoom: 25%;" width=400 /> | <img src="img/남자2.png" alt="영식님" style="zoom: 25%;" width=400 /> |
+| <img src="youngsik/img/여자3.png" alt="수민님" style="zoom: 25%;" width=400 /> | <img src="youngsik/img/여자4.png" alt="세진님" style="zoom: 25%;" width=400 /> | <img src="youngsik/img/남자1.png" alt="재필님" style="zoom: 25%;" width=400 /> | <img src="youngsik/img/남자2.png" alt="영식님" style="zoom: 25%;" width=400 /> |
 | -------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------- |
 | **박수민**<br />(팀장)                             | **한세진**<br />(팀원)                             | **이재필**<br />(팀원)                             | **윤영식**<br />(팀원)                             |
 
