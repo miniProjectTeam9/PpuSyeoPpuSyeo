@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    
+}
+body {
+    text-align: center;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightgray;
+}
+.box {
+    width: 1000px;
+}
+.title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 35px;
+    margin-top: 30px;
+    
+}
+.log {
+    font-size: 30px;
+
+    height: 40px;
+}
+.count {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+}
+.screen {
+    width: 100%;
+    height: 600px;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.home img{
+    margin-top: 40px;
+    width: 40px;
+    height: 40px;  
+}
