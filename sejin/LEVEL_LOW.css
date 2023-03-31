@@ -1,0 +1,125 @@
+section.wrapper {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("image/chicken.png") no-repeat;
+    position: relative;
+}
+section.wrapper .toHome {
+    position: absolute;
+    font-size: 12px;
+    left: 0;
+    top: 10px;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+.ending {
+    width: 500px;
+    height: 500px;
+    background: url("image/end.png") no-repeat;
+    z-index: 9999;
+    position: absolute;
+    top: 200px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    animation: ending 1s   ;
+    display: none;
+    justify-content: center;
+    align-items: last baseline;
+}
+@keyframes ending {
+    from {
+        top: 450px;
+        width: 0;
+        height: 0;
+    }to{
+        top: 200px;
+        width: 500px;
+        height: 500px;
+    }
+}
+section.wrapper h1.title {
+    color: navy;
+    font-weight: 700;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+section.wrapper .setLevel{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+section.wrapper .setLevel .level {
+    width: 150px;
+    padding: 10px 30px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+section.wrapper .setLevel .lowLevel {
+    background: #f0dd31;
+}
+section.wrapper .setLevel .lowLevel:hover {
+    background: #ffcc00;
+}
+section.wrapper .setLevel .midLevel {
+    background: #37c1b8;
+}
+section.wrapper .setLevel .midLevel:hover {
+    background: #20ada4;
+}
+section.wrapper .setLevel .highLevel {
+    background: #ff4646;
+}
+section.wrapper .setLevel .highLevel:hover {
+    background: #e42c2c;
+}
+section.wrapper .puzzle {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+}
+section.wrapper .lowLevelGame{
+    overflow: hidden;
+}
+section.wrapper .lowLevelGame .mixedImage {
+    width: 33.33%;
+    height: 33.33%;
+    float: left;
+    display: flex;
+    opacity: 0.8;
+}
+section.wrapper .lowLevelGame .mixedImage:nth-child(2n + 1) {
+    animation: easyMode1 1s infinite both;
+}
+@keyframes easyMode1 {
+    0% {border-radius: 10%;}
+    50% {border-radius: 50%;}
+    100% {border-radius: 10%;}    
+}
+section.wrapper .lowLevelGame .mixedImage:nth-child(2n) {
+    animation: easyMode2 1s infinite both;
+}
+@keyframes easyMode2 {
+    0% {border-radius: 50%;}
+    50% {border-radius: 10%;}
+    100% {border-radius: 50%;}    
+}
+section.wrapper .lowLevelGame .mixedImage:hover {
+    opacity: 1;
+}
+section.wrapper .lowLevelGame #blank {
+    background: #ffffff;
+}
