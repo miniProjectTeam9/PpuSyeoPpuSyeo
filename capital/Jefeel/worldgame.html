@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WORLD MAP</title>
+    <link rel="stylesheet" href="game.css" />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <container class="center">
+      <div class="setting">
+        <div class="setting-box">
+          <a href="../index.html" id="toTitle" class="bg">타이틀 화면으로</a>
+          <a href="worldgame.html" id="gameAgain" class="bg">다시</a>
+        </div>
+      </div>
+      <div id="question">
+        <div class="quizAnswerCheck">
+          <span id="openAnswer"></span>
+          <button id="nextQuiz">다음 문제</button>
+        </div>
+      </div>
+      <div class="ask bg"><span class="country">이 나라</span>의 수도는?</div>
+      <div id="answer" class="bg">
+        <div class="box">
+          <input
+            type="text"
+            placeholder="정답을 입력해주세요!"
+            id="answerText"
+          />
+          <button id="answerCheck">확인</button>
+          <div class="count">정답 수: <span id="correct">0</span> / 10</div>
+        </div>
+      </div>
+    </container>
+
+    <script type="module" src="game.js"></script>
+  </body>
+</html>
